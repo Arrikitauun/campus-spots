@@ -1,6 +1,8 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
+       console.log("Hello from my phone");
+
   return (
     <View style={styles.container}>
       <Image source={require("../../assets/images/icon.png")} style={styles.logo} />
