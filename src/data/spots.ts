@@ -1,4 +1,4 @@
-export type Category = "sight" | "food" | "park" | "museum" | "campus";
+export type Category = "sight" | "food" | "park" | "museum" | "campus" | "club";
 
 export interface Spot {
   id: string;
@@ -15,6 +15,7 @@ export const CATEGORY_EMOJI: Record<Category, string> = {
   park: "🌳",
   museum: "🏛️",
   campus: "🎓",
+  club: "🪩",
 };
 
 export const SPOTS: Spot[] = [
@@ -73,5 +74,29 @@ export const SPOTS: Spot[] = [
     description: "The main campus on Warszawska Street. Your second home this semester.",
     latitude: 50.0711,
     longitude: 19.9439,
+  },
+  {
+    id: "teatro-cubano",
+    name: "Teatro Cubano",
+    category: "club",
+    description: "A Cuban-style club hidden in a courtyard on Jagiellońska Street. Latin music, salsa and reggaeton, and student nights during the week.",
+    latitude: 50.0624,
+    longitude: 19.9343,
+  },
+  {
+    id: "frantic",
+    name: "Frantic Club",
+    category: "club",
+    description: "One of the biggest clubs in the Old Town, in the cellars of Szewska Street, with two dance floors and house music until late.",
+    latitude: 50.0619,
+    longitude: 19.9356,
+  },
+  {
+    id: "coco",
+    name: "Coco Music Club",
+    category: "club",
+    description: "A popular student club on Szpitalna Street, across from the Słowacki Theatre, with two dance floors and three bars.",
+    latitude: 50.065,
+    longitude: 19.942,
   },
 ];
