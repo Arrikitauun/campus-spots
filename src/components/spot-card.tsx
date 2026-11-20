@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import { CATEGORY_EMOJI, Spot } from "@/data/spots";
+import { CategoryBadge } from "@/components/category-badge";
 
 interface Props {
   spot: Spot;
@@ -14,6 +15,7 @@ export function SpotCard({ spot }: Props) {
         <Text style={styles.description} numberOfLines={2}>
           {spot.description}
         </Text>
+        <CategoryBadge category={spot.category} />
       </View>
     </View>
   );
