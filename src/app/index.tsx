@@ -1,4 +1,5 @@
 import { ScrollView, StyleSheet, Text } from "react-native";
+import { CategoryChips } from "@/components/category-chips";
 import { SpotCard } from "@/components/spot-card";
 import { CATEGORY_EMOJI, Category, SPOTS, Spot } from "@/data/spots";
 
@@ -39,6 +40,7 @@ export default function Index() {
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
       <Text style={styles.subtitle}>{SPOTS.length} places worth visiting</Text>
       <Text style={styles.summary}>{categorySummary(SPOTS)}</Text>
+      <CategoryChips />
       {SPOTS.map((spot) => (
         <SpotCard key={spot.id} spot={spot} />
       ))}
